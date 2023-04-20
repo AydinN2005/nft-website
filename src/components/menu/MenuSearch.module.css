@@ -1,0 +1,12 @@
+.textInput{
+    border: 1px solid var(--primary-gray-color);
+    border-radius: 48px;
+    padding: 8px 16px;
+    height: 44px;
+    font-size: 16px;
+    background-color: unset;
+    width: 350px;
+}
+.textInput:focus{
+    outline: none;
+}

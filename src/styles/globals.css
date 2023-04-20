@@ -1,27 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --primary-bg: #020206;
+    --primary-blue: #1C50FD;
+    --primary-blue-hover: #1d3c9b;
+    --primary-purple: #7100B1;
+    --primary-gray-color: #59535C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: Raleway;
+    src: url("/public/fonts/Raleway-Regular.ttf");
+}
+
+* {
+    text-transform: capitalize;
+    font-family: Arial;
+    font-weight: 400;
+    transition: all .3s;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: var(--primary-bg);
+    color: white;
+}
+.gray-color{
+    color: var(--primary-gray-color);
+}
+.custom-container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 16px;
+    padding-bottom: 0;
+}
+
+.capital-text {
+    text-transform: uppercase;
+}
+.primary-btn{
+    background-color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+.primary-btn:hover{
+    background-color: var(--primary-blue-hover);
 }
