@@ -1,0 +1,29 @@
+.box {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #061032;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #253986;
+    border: 1px solid #061032;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #0D1F64 !important;
+    border: 1px solid #253986 !important;
+    color: #3f64e1;
+}
+.activeBox {
+    background-color: #0D1F64 !important;
+    border: 1px solid #253986 !important;
+    color: #3f64e1;
+}
+.carouselContainer .react-multi-carousel-item{
+    /*display: flex !important;*/
+    /*justify-content: center !important;*/
+}

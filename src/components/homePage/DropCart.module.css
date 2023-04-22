@@ -1,0 +1,18 @@
+.cart{
+    background-color: var(--box-bg);
+    border-radius: 24px;
+    padding: 16px;
+    cursor: pointer;
+}
+.cart:hover{
+    box-shadow: 0 8px 10px 0 rgba(28, 80, 253, 0.5);
+}
+.circleContainer:hover .circle{
+    background-color: var(--primary-blue);
+}
+.circle{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}

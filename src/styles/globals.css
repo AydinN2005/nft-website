@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    --primary-bg: #020206;
+    --primary-bg: #09000c;
     --primary-blue: #1C50FD;
     --primary-blue-hover: #1d3c9b;
     --primary-purple: #7100B1;
     --primary-gray-color: #59535C;
+    --box-bg: #101014;
 }
 
 @font-face {
@@ -49,4 +50,19 @@ body {
 }
 .primary-btn:hover{
     background-color: var(--primary-blue-hover);
+}
+.margin-top{
+    margin-top: 150px;
+}
+.c-strong-text{
+    font-size: 50px;
+    font-weight: bold;
+}
+.purple-text{
+    color: var(--primary-purple);
+    font-size: 14px;
+    font-weight: bold;
+}
+.blue-text{
+    color: var(--primary-blue);
 }

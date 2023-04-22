@@ -7,6 +7,10 @@
     background-color: unset;
     width: 350px;
 }
+.textInput:hover{
+    border-color: white;
+}
 .textInput:focus{
     outline: none;
+    border-color: white;
 }
