@@ -1,0 +1,10 @@
+.roadBox{
+    background: #0F0F11;
+    border-radius: 24px;
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-direction: column;
+}

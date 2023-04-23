@@ -1,0 +1,31 @@
+.box {
+    background: linear-gradient(90deg, rgba(113, 0, 177, 0.55)  , rgba(9, 21, 72, 0.8));
+    border-radius: 24px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 300px;
+}
+
+.textInput {
+    background-color: #192243;
+    backdrop-filter: blur(15px);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 24px;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-gray-color);
+    width: 400px;
+}
+
+.textInput:hover {
+    border-color: white;
+}
+
+.textInput:focus {
+    outline: none;
+    border-color: white;
+}

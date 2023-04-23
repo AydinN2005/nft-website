@@ -58,6 +58,9 @@ export default function HomeDrops() {
                     })
                 }
             </div>
+            <button className={'primary-vacant-btn w-max self-center'}>
+                show all
+            </button>
         </div>
     )
 }

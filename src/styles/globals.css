@@ -8,6 +8,7 @@
     --primary-purple: #7100B1;
     --primary-gray-color: #59535C;
     --box-bg: #101014;
+    --gray-box: #111116;
 }
 
 @font-face {
@@ -41,7 +42,7 @@ body {
 .capital-text {
     text-transform: uppercase;
 }
-.primary-btn{
+.primary-btn , .primary-vacant-btn{
     background-color: var(--primary-blue);
     font-size: 18px;
     font-weight: normal;
@@ -50,6 +51,14 @@ body {
 }
 .primary-btn:hover{
     background-color: var(--primary-blue-hover);
+}
+.primary-vacant-btn{
+    background-color: unset;
+    border: 1px solid var(--primary-gray-color);
+    backdrop-filter:  blur(10px);
+}
+.primary-vacant-btn:hover{
+    border-color: white;
 }
 .margin-top{
     margin-top: 150px;
