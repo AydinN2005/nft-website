@@ -1,0 +1,9 @@
+.icon {
+    background: var(--gray-box);
+    border-radius: 16px;
+    padding: 8px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: var(--primary-purple);
+}

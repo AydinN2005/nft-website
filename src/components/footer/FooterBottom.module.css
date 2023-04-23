@@ -1,0 +1,10 @@
+.footerBottom {
+    border-top: 1px solid var(--primary-gray-color);
+    padding: 24px 0;
+}
+.bigText{
+    cursor: pointer;
+}
+.bigText:hover{
+    color: var(--primary-purple);
+}
