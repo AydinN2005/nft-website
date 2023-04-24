@@ -5,7 +5,8 @@
     height: 44px;
     font-size: 16px;
     background-color: unset;
-    width: 350px;
+    min-width: 230px;
+    width: 100%;
 }
 .textInput:hover{
     border-color: white;
