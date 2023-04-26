@@ -8,7 +8,7 @@ export default function HomeCreators() {
     return (
         <div className={'custom-container'}>
             <CustomTitle title={'top creators in this week !'} desc={'top creators in our team'}/>
-            <div className={'grid grid-cols-4 gap-8 mt-10'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10'}>
                 {
                     creators.map(item => {
                         return (

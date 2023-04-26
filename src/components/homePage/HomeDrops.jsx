@@ -18,12 +18,12 @@ export default function HomeDrops() {
             items: 7
         },
         tablet: {
-            breakpoint: {max: 1024, min: 464},
-            items: 2
+            breakpoint: {max: 1024, min: 768},
+            items: 5
         },
         mobile: {
-            breakpoint: {max: 464, min: 0},
-            items: 1
+            breakpoint: {max: 767, min: 0},
+            items: 2
         }
     };
     const [id, setId] = useState(0)
@@ -51,7 +51,7 @@ export default function HomeDrops() {
                     }
                 </Carousel>
             </div>
-            <div className={`grid grid-cols-4 gap-8`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`}>
                 {
                     cartData.map(item => {
                         return <DropCart key={item.id} cartData={item}/>

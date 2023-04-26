@@ -2,7 +2,6 @@
     font-size: 100px;
     font-weight: bold;
 }
-
 .headerImage{
     width: 80px;
     height: 120px;
@@ -13,4 +12,21 @@
     padding: 32px;
     border-radius: 50%;
     background-color: var(--primary-blue);
+}
+@media screen and (max-width: 1023px) {
+    .homeHeaderTitle {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .homeHeaderTitle{
+        font-size: 24px;
+    }
+    .headerImage{
+        width: 48px;
+        height: 50px;
+    }
+    .blueArrow{
+        display: none;
+    }
 }

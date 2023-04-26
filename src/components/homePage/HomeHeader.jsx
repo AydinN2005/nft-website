@@ -12,11 +12,11 @@ export default function HomeHeader() {
                     discover <Image src={ballon} className={`${style.headerImage}`}/> collect <br/> and sell rare <Image
                     src={pw} className={`${style.headerImage}`}/>
                 </strong>
-                <div className={'flex items-center gap-3'}>
+                <div className={'flex lg:flex-row flex-col-reverse items-center gap-3'}>
                     <div className={`${style.blueArrow}`}>
                         <Image src={arrow} style={{minWidth: '50px', minHeight: '50px'}}/>
                     </div>
-                    <p className={'gray-color text-sm font-normal'}>
+                    <p className={'gray-color text-xs md:text-left text-center md:text-sm font-normal'}>
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
                         the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum
                         may be used as a placeholder before final copy is available.

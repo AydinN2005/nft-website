@@ -3,8 +3,8 @@ import style from './FooterLinks.module.css'
 export default function FooterLinks() {
     const hartCode = [1, 2, 3, 4]
     return (
-        <div className={'grid grid-cols-3 gap-14'}>
-            <div className={'flex flex-col gap-6'}>
+        <div className={'grid grid-cols-3 gap-6 md:gap-14'}>
+            <div className={'flex flex-col md:items-start items-center gap-6'}>
                 <strong className={'text-lg font-bold'}>
                     main links
                 </strong>
@@ -24,7 +24,7 @@ export default function FooterLinks() {
                 <strong className={'text-lg font-bold'}>
                     main links
                 </strong>
-                <div className={'flex flex-col gap-3'}>
+                <div className={'flex flex-col md:items-start items-center gap-3'}>
                     {
                         hartCode.map(item => {
                             return (
@@ -36,7 +36,7 @@ export default function FooterLinks() {
                     }
                 </div>
             </div>
-            <div className={'flex flex-col gap-6'}>
+            <div className={'flex flex-col md:items-start items-center gap-6'}>
                 <strong className={'text-lg font-bold'}>
                     main links
                 </strong>

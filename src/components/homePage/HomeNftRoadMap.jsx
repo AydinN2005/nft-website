@@ -7,7 +7,7 @@ export default function HomeNftRoadMap() {
     return (
         <div className={'custom-container'}>
             <CustomTitle title={'create and sell your Nfts !'} desc={'nft road map for better performance'}/>
-            <div className="grid grid-cols-3 gap-6 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {
                     roadMap.map(item => {
                         return (
@@ -24,7 +24,7 @@ export default function HomeNftRoadMap() {
                     })
                 }
             </div>
-            <div className={'flex items-center gap-6 justify-center mt-10'}>
+            <div className={'flex md:flex-row flex-col items-center gap-6 justify-center mt-10'}>
                 <button className={'primary-btn'}>
                     create artwork
                 </button>
