@@ -18,7 +18,7 @@ export default function MobileMenu({active, handleSetActive, handleShowWallet}) 
     return (
         <div className={'overlay flex justify-end'}
              style={active ? {zIndex: 1002, opacity: 1} : {zIndex: -1, opacity: 0}}>
-            <div className={`flex flex-col gap-8 ${style.mobileMenu} relative`}
+            <div className={`flex flex-col gap-8 ${style.mobileMenu} relative overflow-x-auto`}
                  style={active ? {right: 0} : {right: '-100vw'}}>
                 <div className={'flex justify-between items-center'}>
                     <div className={'flex items-center gap-3'}>
