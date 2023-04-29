@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    --primary-bg: #09000c;
+    --primary-bg: #13001a;
     --primary-blue: #1C50FD;
     --primary-blue-hover: #1d3c9b;
     --primary-purple: #7100B1;
@@ -75,6 +75,9 @@ body {
 
 .blue-text {
     color: var(--primary-blue);
+}
+.dropsCarousel .react-multiple-carousel__arrow{
+    z-index: 2;
 }
 
 .overlay {

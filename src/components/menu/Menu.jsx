@@ -4,16 +4,10 @@ import style from './Menu.module.css'
 import MenuLinks from "@/components/menu/MenuLinks";
 import MenuSearch from "@/components/menu/MenuSearch";
 import MenuIcon from "@/components/customSvg/MenuIcon";
-import {useState} from "react";
-import MobileMenu from "@/components/menu/MobileMenu";
 
-export default function Menu() {
-    const [active, setActive] = useState(false)
-    const handleSetActive = () => {
-        setActive(!active)
-    }
+export default function Menu({active, menuIcon, handleShowWallet}) {
     return (
-        <>
+        <div className={`sticky top-0 ${style.menuContainer}`}>
             <div className={'custom-container flex items-center justify-between'}>
                 <div className={'flex items-center gap-3'}>
                     <Image className={`${style.logoImg}`} src={logo} alt={'logo'}/>
@@ -28,15 +22,14 @@ export default function Menu() {
                     <div className={'lg:block hidden'}>
                         <MenuSearch/>
                     </div>
-                    <button className={'primary-btn md:block hidden'}>
+                    <button className={'primary-btn md:block hidden'} onClick={handleShowWallet}>
                         connect to wallet
                     </button>
-                    <div className={`lg:hidden block`} onClick={() => setActive(!active)}>
+                    <div className={`lg:hidden block`} onClick={menuIcon}>
                         <MenuIcon active={active}/>
                     </div>
-                    <MobileMenu active={active} handleSetActive={handleSetActive}/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

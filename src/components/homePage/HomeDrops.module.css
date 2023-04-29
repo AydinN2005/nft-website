@@ -23,7 +23,7 @@
     border: 1px solid #253986 !important;
     color: #3f64e1;
 }
-.carouselContainer .react-multi-carousel-item{
-    /*display: flex !important;*/
-    /*justify-content: center !important;*/
+.carouselContainer{
+    /*position: relative;*/
+    /*z-index: -1;*/
 }

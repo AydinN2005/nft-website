@@ -5,6 +5,7 @@
     border-bottom-left-radius: 24px;
     background-color: var(--primary-bg);
     padding: 16px;
+    z-index: 1003;
 }
 
 .link {

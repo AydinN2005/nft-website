@@ -36,7 +36,7 @@ export default function HomeDrops() {
     return (
         <div className={'flex flex-col gap-10 custom-container'}>
             <CustomTitle desc={'hot nft drops'} title={'hot drops'}/>
-            <div className={style.carouselContainer}>
+            <div className={`${style.carouselContainer} dropsCarousel`}>
                 <Carousel responsive={responsive} draggable={true} itemClass={'flex justify-center px-4'}>
                     {
                         dropsCategory.map(item => {

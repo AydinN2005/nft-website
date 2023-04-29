@@ -7,11 +7,17 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import MenuSearch from "@/components/menu/MenuSearch";
 
-export default function MobileMenu({active, handleSetActive}) {
+export default function MobileMenu({active, handleSetActive, handleShowWallet}) {
     const router = useRouter()
+    const handleClick = () => {
+        handleSetActive();
+        setTimeout(() => {
+            handleShowWallet();
+        }, 500)
+    }
     return (
         <div className={'overlay flex justify-end'}
-             style={active ? {zIndex: 998, opacity: 1} : {zIndex: -1, opacity: 0}}>
+             style={active ? {zIndex: 1002, opacity: 1} : {zIndex: -1, opacity: 0}}>
             <div className={`flex flex-col gap-8 ${style.mobileMenu} relative`}
                  style={active ? {right: 0} : {right: '-100vw'}}>
                 <div className={'flex justify-between items-center'}>
@@ -46,7 +52,8 @@ export default function MobileMenu({active, handleSetActive}) {
                             })
                         }
                         <div className={'md:hidden'}>
-                            <button className={'primary-btn'} style={{borderRadius: '8px'}}>
+                            <button className={'primary-btn'} style={{borderRadius: '8px'}}
+                                    onClick={() => handleClick()}>
                                 connect to wallet
                             </button>
                         </div>
