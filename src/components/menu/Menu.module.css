@@ -5,13 +5,13 @@
     z-index: 3;
 }
 .logoImg{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 @media screen and (max-width: 767px) {
     .logoImg {
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 36px;
     }
 }

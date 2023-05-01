@@ -11,7 +11,7 @@ export default function MenuLinks() {
                 menuLinks.map(item => {
                     return (
                         <Link href={item.route} >
-                            <span className={`block w-full h-full text-lg font-bold ${style.link} gray-color ${router.pathname === item.route ? style.activeLink : null}`}>
+                            <span className={`block w-full h-full text-sm font-bold ${style.link} gray-color ${router.pathname === item.route ? style.activeLink : null}`}>
                                 {item.title}
                             </span>
                         </Link>
