@@ -2,11 +2,16 @@
     background-color: var(--primary-bg);
     padding-bottom: 8px;
     margin-bottom: 40px;
-    /*z-index: 999;*/
     z-index: 3;
 }
 .logoImg{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+    .logoImg {
+        width: 48px;
+        height: 48px;
+    }
 }

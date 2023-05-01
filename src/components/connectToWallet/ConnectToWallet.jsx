@@ -7,10 +7,14 @@ import coin from '/public/images/coing.png'
 import exodus from '/public/images/exodus.png'
 import trezor from '/public/images/trezor.png'
 import MenuIcon from "@/components/customSvg/MenuIcon";
+import {useRouter} from "next/router";
 
 export default function ConnectToWallet({active, handleHideWallet}) {
+    const router = useRouter()
     const handleSelectWallet = () => {
         handleHideWallet();
+        router.push('/')
+        localStorage.setItem('user', 'loggedIn')
     }
     return (
         <div className={`overlay flex items-center justify-center`}

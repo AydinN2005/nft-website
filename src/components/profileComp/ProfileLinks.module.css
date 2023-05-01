@@ -1,0 +1,16 @@
+.linksContainer {
+    border-radius: 24px;
+    background-color: #2c013c;
+}
+.link:hover span{
+    color: var(--primary-blue);
+}
+.link:first-child{
+    padding-top: 24px;
+}
+.logoutButton{
+    color: red;
+}
+.logoutButton:hover{
+    color: #ab0000;
+}

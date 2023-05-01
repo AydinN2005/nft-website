@@ -6,15 +6,21 @@ import {menuLinks} from "@/components/menu/data";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import MenuSearch from "@/components/menu/MenuSearch";
+import {useLayoutEffect, useState} from "react";
+import Loader from "@/components/helper/others/Loader";
 
 export default function MobileMenu({active, handleSetActive, handleShowWallet}) {
     const router = useRouter()
+    const [status, setStatus] = useState('');
     const handleClick = () => {
         handleSetActive();
         setTimeout(() => {
             handleShowWallet();
         }, 500)
     }
+    useLayoutEffect(() => {
+        setStatus(localStorage.getItem('user'))
+    }, [])
     return (
         <div className={'overlay flex justify-end'}
              style={active ? {zIndex: 1002, opacity: 1} : {zIndex: -1, opacity: 0}}>
@@ -52,10 +58,14 @@ export default function MobileMenu({active, handleSetActive, handleShowWallet}) 
                             })
                         }
                         <div className={'md:hidden'}>
-                            <button className={'primary-btn'} style={{borderRadius: '8px'}}
-                                    onClick={() => handleClick()}>
-                                connect to wallet
-                            </button>
+                            {
+                                status === '' ? <Loader/> :
+                                    status === 'loggedIn' ? null :
+                                        <button className={'primary-btn'} style={{borderRadius: '8px'}}
+                                                onClick={() => handleClick()}>
+                                            connect to wallet
+                                        </button>
+                            }
                         </div>
                     </div>
                 </div>
