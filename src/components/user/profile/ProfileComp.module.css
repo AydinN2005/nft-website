@@ -1,0 +1,37 @@
+.profileBg {
+    background: url('../../../../public/images/nftBg.png') center center/cover fixed;
+    height: 350px;
+    width: 100%;
+}
+
+.userImageBox {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.userImage:hover {
+    filter: brightness(0.2);
+}
+
+.profileInfo {
+    position: relative;
+    top: -64px;
+}
+
+.editIconActive {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.editIconDisable {
+    opacity: 0;
+    transform: translateY(32px);
+}
